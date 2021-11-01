@@ -1,0 +1,43 @@
+.todo-card {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding: 8px;
+    color: beige;
+    background-color: #3B5974;
+  }
+  
+  .todo-card .todo-title {
+    max-width: 60%;
+  }
+  
+  button {
+    width: 5.5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    color: beige;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+  }
+  
+  .todo-action .complete {
+    background-color: #A2416B;
+  }
+  
+  .todo-action .reset {
+    background-color: #7EB5A6;
+  }
+  
+  .todo-container .todo-card {
+    border-bottom: 1px solid #889EAF;
+  }
+  
+  .todo-card .completeTask h4 {
+    opacity: 0.6;
+  }
+  
+  .todo-card .incompleteTask h4 {
+    text-decoration: none;
+  }

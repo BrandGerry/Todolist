@@ -1,11 +1,24 @@
 import React from "react";
 
-const Todo = ({title,status,handleTodo,id}) => {
+//styles
+import "../styles/Todo.css"
+
+const Todo = ({ title, status, id, handleCompleteToDo }) => {
   return (
-    <div className="single-todo">
-      <h1>{title}</h1>
-      <button onClick={() => handleTodo(id)}>
-        {status?"Completed" : "Incompleted"}</button> 
+    <div className="todo-card">
+      <div
+        className={`${status ? "completeTask" : "incompleteTask"} todo-title`}
+      >
+        <h4>{title}</h4>
+      </div>
+      <div className="todo-action">
+        <button
+          onClick={() => handleCompleteToDo(id)}
+          className={status ? "complete" : "reset"}
+        >
+          {status ? "Reset" : "Complete"}
+        </button>
+      </div>
     </div>
   );
 };

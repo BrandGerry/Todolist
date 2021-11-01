@@ -1,20 +1,60 @@
 header {
-  padding: 5px 4rem;
-  background-color: #000;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100px;
+  color: beige;
+  background-color: #0C4271;
+  width: 100vw;
+  font-size: 40px;
+}
+
+.logo h4 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  font-size: 35px;
+  /*grid-column: 2 / 3;*/
+  grid-row: 1;
 }
 
-header .Todolist {
-  color: #fff;
-  text-align: center;
+header .task-to-complete {
+  padding: 2rem;
   font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0.9;
+  grid-row: 1;
+  grid-column: 3/3;
 }
 
-header ul {
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
+@media (max-width: 550px) {
+  header {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px;
+    color: rgb(220, 214, 214);
+    background-color: #171717;
+    width: 100vw;
+  }
+
+  .logo h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    font-size: 2rem;
+  }
+
+  header .task-to-complete {
+    padding: 0.5rem;
+    grid-row: 1;
+    grid-column: 3/3;
+    font-size: 0.8rem;
+  }
 }
+
 

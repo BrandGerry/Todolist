@@ -3,21 +3,15 @@ import React from "react";
 //Estilos
 import "../styles/Header.css";
 
-const Header = () => {
+const Header = ({ count }) => {
   return (
-    <header>
-      <h4 className="Todolist">Todolist</h4>
-      <ul>
-        <li>
-          <button>All</button>
-        </li>
-        <li>
-          <button>Completed</button>
-        </li>
-        <li>
-          <button>Incompleted</button>
-        </li>
-      </ul>
+    <header className="logo">
+      <h4>To do list</h4>
+      <div className="task-to-complete">
+        <p>Tasks to complete</p>
+        <p>{": " + count}</p>
+        
+      </div>
     </header>
   );
 };
