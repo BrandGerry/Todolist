@@ -32,7 +32,7 @@ const App = () => {
 
   //Filtramos el todolist con su parte completa si no esta seleccionado
   useEffect(() => {
-    const uncompletedTasks = toDoList ?.filter(
+    const uncompletedTasks = toDoList?.filter(
       (item) => item.completed === false,
     );
     setCount(uncompletedTasks?.length);
